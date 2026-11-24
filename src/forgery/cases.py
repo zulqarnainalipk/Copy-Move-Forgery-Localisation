@@ -13,7 +13,7 @@ from forgery.data import image_path, load_split_table, mask_instances
 from forgery.hybrid import fuse
 from forgery.postprocess import MaskConfig, candidate
 
-PANEL_SIDE = 640
+PANEL_SIDE = 800
 
 
 def shrink(array, interpolation):
@@ -85,23 +85,26 @@ SHEET_LABELS = {"image": "image", "truth": "ground truth", "sift": "SIFT matcher
                 "union": "hybrid union", "refine": "hybrid refine", "probability": "probability", "matches": "SIFT matches"}
 
 
-def contact_sheet(panels, order, title="", columns=3, cell=(PANEL_SIDE, 3 * PANEL_SIDE // 4), gap=12):
-    """Grid of the chosen panels (aspect kept inside equal cells), a label above each and a title line on top."""
-    cell_width, cell_height = cell
-    cell_height = max(1, max(int(panels[k].shape[0] * min(cell_width / panels[k].shape[1], cell_height / panels[k].shape[0])) for k in order))
-    label_band, header = 44, 60 if title else 0
+def contact_sheet(panels, order, title="", columns=2, cell=(PANEL_SIDE, 3 * PANEL_SIDE // 4), gap=12):
+    """Grid of the chosen panels (aspect kept inside equal cells, at most two per row), a label above each and a title line on top."""
+    cell_width, cell_cap = cell
     rows = -(-len(order) // columns)
-    sheet = np.full((header + rows * (label_band + cell_height + gap), columns * cell_width + (columns + 1) * gap, 3), 255, np.uint8)
+    fitted = {k: min(cell_width / panels[k].shape[1], cell_cap / panels[k].shape[0]) for k in order}
+    row_heights = [max(1, max(int(panels[k].shape[0] * fitted[k]) for k in order[r * columns:(r + 1) * columns])) for r in range(rows)]
+    label_band, header = 44, 60 if title else 0
+    row_tops = [header + sum(label_band + h + gap for h in row_heights[:r]) for r in range(rows)]
+    sheet = np.full((header + sum(label_band + h + gap for h in row_heights), columns * cell_width + (columns + 1) * gap, 3), 255, np.uint8)
     font = cv2.FONT_HERSHEY_SIMPLEX
     if title:
         cv2.putText(sheet, title, (gap, 42), font, 1.05, (0, 0, 0), 2, cv2.LINE_AA)
     for index, key in enumerate(order):
         panel = panels[key]
+        cell_height = row_heights[index // columns]
         scale = min(cell_width / panel.shape[1], cell_height / panel.shape[0])
         size = (max(1, int(panel.shape[1] * scale)), max(1, int(panel.shape[0] * scale)))
         tile = cv2.resize(panel, size, interpolation=cv2.INTER_AREA if scale < 1 else cv2.INTER_LINEAR)
         left = gap + (index % columns) * (cell_width + gap)
-        top = header + (index // columns) * (label_band + cell_height + gap)
+        top = row_tops[index // columns]
         y, x = top + label_band + (cell_height - size[1]) // 2, left + (cell_width - size[0]) // 2
         cv2.putText(sheet, SHEET_LABELS.get(key, key), (x, y - 12), font, 0.95, (0, 0, 0), 2, cv2.LINE_AA)
         sheet[y:y + size[1], x:x + size[0]] = tile
@@ -149,7 +152,7 @@ def render_cases(args, paths=None):
         if getattr(args, "sheet", False):
             title = f"{uid}    pixel F1: SIFT {stats['sift']['pixel_f1']:.2f}   segmenter {stats['segmenter']['pixel_f1']:.2f}   union {stats['union']['pixel_f1']:.2f}"
             sheet = contact_sheet(panels, ["image", "truth", "sift", "segmenter", "union", "probability"], title)
-            Image.fromarray(sheet).save(out_dir / f"sheet_{name}.jpg", quality=95)
+            Image.fromarray(sheet).save(out_dir / f"sheet_{name}.jpg", quality=92)
         else:
             for key, panel in panels.items():
                 Image.fromarray(panel).save(out_dir / f"{name}_{key}.png")
