@@ -18,7 +18,7 @@ authors:
     affiliation: "Department of Information Technology, Bahauddin Zakariya University, Multan, Pakistan"
 preferred-citation:
   type: article
-  title: "Does deep segmentation beat keypoint matching for biomedical copy-move forgery? A grouped, baseline-controlled study"
+  title: "Deep segmentation and keypoint matching for copy-move forgery in biomedical images: a grouped, baseline-controlled comparison"
   authors:
     - family-names: Ali
       given-names: Zulqarnain

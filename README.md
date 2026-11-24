@@ -108,7 +108,7 @@ pytest -m "not slow" tests      # fast tests only, as run in continuous integrat
 
 If you use this code or the results, please cite:
 
-> Zulqarnain Ali and Muhammad Ibrahim Qasmi. Does deep segmentation beat keypoint matching for biomedical copy-move forgery? A grouped, baseline-controlled study.
+> Zulqarnain Ali and Muhammad Ibrahim Qasmi. Deep segmentation and keypoint matching for copy-move forgery in biomedical images: a grouped, baseline-controlled comparison.
 
 Machine-readable metadata is in `CITATION.cff`.
 
