@@ -1,0 +1,164 @@
+{
+  "both_hit": {
+    "uid": "forged_22751",
+    "height": 2592,
+    "width": 3888,
+    "inliers": 487,
+    "mean_probability": 0.4181949198246002,
+    "sift": {
+      "pixel_f1": 0.808527509751591,
+      "official_score": 0.4042637548757956,
+      "empty": false
+    },
+    "segmenter": {
+      "pixel_f1": 0.8284826541065446,
+      "official_score": 0.8284826541065448,
+      "empty": false
+    },
+    "refine": {
+      "pixel_f1": 0.8463153949824508,
+      "official_score": 0.8463153949824509,
+      "empty": false
+    },
+    "union": {
+      "pixel_f1": 0.7978238317854304,
+      "official_score": 0.7978238317854304,
+      "empty": false
+    }
+  },
+  "segmenter_only": {
+    "uid": "forged_23930",
+    "height": 512,
+    "width": 683,
+    "inliers": 11,
+    "mean_probability": 0.43315839767456055,
+    "sift": {
+      "pixel_f1": 0.0,
+      "official_score": 0.0,
+      "empty": true
+    },
+    "segmenter": {
+      "pixel_f1": 0.8019020979020979,
+      "official_score": 0.3758949884719844,
+      "empty": false
+    },
+    "refine": {
+      "pixel_f1": 0.8019020979020979,
+      "official_score": 0.3758949884719844,
+      "empty": false
+    },
+    "union": {
+      "pixel_f1": 0.8019020979020979,
+      "official_score": 0.2803493122446685,
+      "empty": false
+    }
+  },
+  "keypoints_only": {
+    "uid": "forged_55818",
+    "height": 287,
+    "width": 560,
+    "inliers": 63,
+    "mean_probability": 0.06451424956321716,
+    "sift": {
+      "pixel_f1": 0.6510294201984286,
+      "official_score": 0.3255147100992143,
+      "empty": false
+    },
+    "segmenter": {
+      "pixel_f1": 0.0,
+      "official_score": 0.0,
+      "empty": true
+    },
+    "refine": {
+      "pixel_f1": 0.7079585367943116,
+      "official_score": 0.27943004685856365,
+      "empty": false
+    },
+    "union": {
+      "pixel_f1": 0.6510294201984286,
+      "official_score": 0.6510294201984286,
+      "empty": false
+    }
+  },
+  "both_miss": {
+    "uid": "forged_28953",
+    "height": 1024,
+    "width": 1280,
+    "inliers": 4,
+    "mean_probability": 0.0033911438658833504,
+    "sift": {
+      "pixel_f1": 0.0,
+      "official_score": 0.0,
+      "empty": true
+    },
+    "segmenter": {
+      "pixel_f1": 0.0,
+      "official_score": 0.0,
+      "empty": true
+    },
+    "refine": {
+      "pixel_f1": 0.0,
+      "official_score": 0.0,
+      "empty": true
+    },
+    "union": {
+      "pixel_f1": 0.0,
+      "official_score": 0.0,
+      "empty": true
+    }
+  },
+  "false_alarm": {
+    "uid": "authentic_35347",
+    "height": 256,
+    "width": 320,
+    "inliers": 0,
+    "mean_probability": 0.10421092063188553,
+    "sift": {
+      "pixel_f1": 1.0,
+      "official_score": 1.0,
+      "empty": true
+    },
+    "segmenter": {
+      "pixel_f1": 0.0,
+      "official_score": 0.0,
+      "empty": false
+    },
+    "refine": {
+      "pixel_f1": 0.0,
+      "official_score": 0.0,
+      "empty": false
+    },
+    "union": {
+      "pixel_f1": 0.0,
+      "official_score": 0.0,
+      "empty": false
+    }
+  },
+  "supplemental": {
+    "uid": "supp_1712",
+    "height": 713,
+    "width": 1267,
+    "inliers": 228,
+    "mean_probability": 0.429728239774704,
+    "sift": {
+      "pixel_f1": 0.6279275266006002,
+      "official_score": 0.24374991141160296,
+      "empty": false
+    },
+    "segmenter": {
+      "pixel_f1": 0.0,
+      "official_score": 0.0,
+      "empty": false
+    },
+    "refine": {
+      "pixel_f1": 0.0,
+      "official_score": 0.0,
+      "empty": false
+    },
+    "union": {
+      "pixel_f1": 0.5249088106466432,
+      "official_score": 0.5249088106466432,
+      "empty": false
+    }
+  }
+}

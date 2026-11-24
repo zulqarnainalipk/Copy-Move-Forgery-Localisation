@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code or the results, please cite the article below."
+title: "Copy-move forgery localisation in biomedical research images"
+type: software
+version: 0.1.0
+date-released: 2026-11-24
+license: MIT
+repository-code: "https://github.com/zulqarnainalipk/Copy-Move-Forgery-Localisation"
+authors:
+  - family-names: Ali
+    given-names: Zulqarnain
+    orcid: "https://orcid.org/0009-0009-0281-882X"
+    email: zulqar445ali@gmail.com
+    affiliation: "Department of Data Science, The Islamia University of Bahawalpur, Pakistan"
+  - family-names: Qasmi
+    given-names: Muhammad Ibrahim
+    orcid: "https://orcid.org/0009-0006-5392-0873"
+    affiliation: "Department of Information Technology, Bahauddin Zakariya University, Multan, Pakistan"
+preferred-citation:
+  type: article
+  title: "Does deep segmentation beat keypoint matching for biomedical copy-move forgery? A grouped, baseline-controlled study"
+  authors:
+    - family-names: Ali
+      given-names: Zulqarnain
+    - family-names: Qasmi
+      given-names: Muhammad Ibrahim

@@ -1,0 +1,22 @@
+| run                 | corruption   |   level |   forged_pixel_f1 |   mixed_pixel_f1 |   authentic_tnr |   official_score |
+|:--------------------|:-------------|--------:|------------------:|-----------------:|----------------:|-----------------:|
+| c7_robust_sift/sift | clean        |   0.000 |             0.209 |            0.559 |           0.974 |            0.500 |
+| c7_robust_sift/sift | jpeg         |  90.000 |             0.173 |            0.541 |           0.977 |            0.490 |
+| c7_robust_sift/sift | jpeg         |  70.000 |             0.141 |            0.522 |           0.974 |            0.480 |
+| c7_robust_sift/sift | jpeg         |  50.000 |             0.118 |            0.499 |           0.952 |            0.465 |
+| c7_robust_sift/sift | blur         |   1.000 |             0.194 |            0.552 |           0.977 |            0.497 |
+| c7_robust_sift/sift | blur         |   2.000 |             0.137 |            0.522 |           0.980 |            0.484 |
+| c7_robust_sift/sift | noise        |   5.000 |             0.128 |            0.516 |           0.977 |            0.478 |
+| c7_robust_sift/sift | noise        |  10.000 |             0.095 |            0.498 |           0.977 |            0.469 |
+| c7_robust_sift/sift | downscale    |   0.750 |             0.190 |            0.550 |           0.977 |            0.495 |
+| c7_robust_sift/sift | downscale    |   0.500 |             0.173 |            0.541 |           0.977 |            0.491 |
+| robust_g3/segmenter | clean        |   0.000 |             0.462 |            0.665 |           0.906 |            0.517 |
+| robust_g3/segmenter | jpeg         |  90.000 |             0.453 |            0.663 |           0.912 |            0.515 |
+| robust_g3/segmenter | jpeg         |  70.000 |             0.437 |            0.646 |           0.895 |            0.502 |
+| robust_g3/segmenter | jpeg         |  50.000 |             0.419 |            0.644 |           0.912 |            0.504 |
+| robust_g3/segmenter | blur         |   1.000 |             0.451 |            0.663 |           0.915 |            0.517 |
+| robust_g3/segmenter | blur         |   2.000 |             0.391 |            0.637 |           0.929 |            0.509 |
+| robust_g3/segmenter | noise        |   5.000 |             0.403 |            0.636 |           0.912 |            0.503 |
+| robust_g3/segmenter | noise        |  10.000 |             0.359 |            0.610 |           0.909 |            0.489 |
+| robust_g3/segmenter | downscale    |   0.750 |             0.453 |            0.660 |           0.906 |            0.514 |
+| robust_g3/segmenter | downscale    |   0.500 |             0.439 |            0.658 |           0.918 |            0.516 |

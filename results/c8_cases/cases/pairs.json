@@ -1,0 +1,20 @@
+{
+  "pair0": {
+    "group": 944,
+    "train": "authentic_12572",
+    "held_out": "authentic_33057",
+    "grouped_split": "train"
+  },
+  "pair1": {
+    "group": 2394,
+    "train": "forged_10307",
+    "held_out": "authentic_51688",
+    "grouped_split": "train"
+  },
+  "pair2": {
+    "group": 2396,
+    "train": "forged_10398",
+    "held_out": "authentic_10398",
+    "grouped_split": "train"
+  }
+}

@@ -1,0 +1,15 @@
+[setup] repo $REPO
+[setup] data outputs
+[setup] encoder None
+[setup] splits None
+[run] -m pytest -q $REPO/tests
+...................                                                      [100%]
+=============================== warnings summary ===============================
+$REPO/tests/test_pipeline.py::test_train_predict_evaluate[crop224]
+$REPO/tests/test_pipeline.py::test_train_predict_evaluate[full]
+    super().__init__(loader)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+19 passed, 2 warnings in 139.22s (0:02:19)
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text

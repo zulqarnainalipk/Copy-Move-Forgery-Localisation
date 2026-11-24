@@ -1,0 +1,14 @@
+[setup] repo $REPO
+[setup] data $FORGERY_DATA_DIR
+[setup] encoder None
+[setup] splits outputs/splits.csv
+[run] $REPO/scripts/cases.py --run-name cases --splits outputs/splits.csv --cache-dir outputs/g3_full_aug --cases both_hit:forged_22751 segmenter_only:forged_23930 keypoints_only:forged_55818 both_miss:forged_28953 false_alarm:authentic_35347 supplemental:supp_1712 --pairs 3
+[cases] 3 near-duplicate pairs written
+[cases] both_hit (forged_22751): sift F1 0.81 | segmenter F1 0.83 | refine F1 0.85 | union F1 0.80
+[cases] segmenter_only (forged_23930): sift F1 0.00 | segmenter F1 0.80 | refine F1 0.80 | union F1 0.80
+[cases] keypoints_only (forged_55818): sift F1 0.65 | segmenter F1 0.00 | refine F1 0.71 | union F1 0.65
+[cases] both_miss (forged_28953): sift F1 0.00 | segmenter F1 0.00 | refine F1 0.00 | union F1 0.00
+[cases] false_alarm (authentic_35347): sift F1 1.00 | segmenter F1 0.00 | refine F1 0.00 | union F1 0.00
+[cases] supplemental (supp_1712): sift F1 0.63 | segmenter F1 0.00 | refine F1 0.00 | union F1 0.52
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text

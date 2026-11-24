@@ -1,0 +1,286 @@
+[audit] 5176 images: 2377 authentic, 2751 forged, 48 supplemental
+
+describe images:   0%|          | 0/5176 [00:00<?, ?it/s]
+describe images:   0%|          | 1/5176 [00:02<3:21:00,  2.33s/it]
+describe images:   2%|▏         | 81/5176 [00:02<01:49, 46.48it/s] 
+describe images:   2%|▏         | 126/5176 [00:05<03:13, 26.04it/s]
+describe images:   3%|▎         | 161/5176 [00:05<02:25, 34.51it/s]
+describe images:   3%|▎         | 181/5176 [00:06<02:24, 34.61it/s]
+describe images:   4%|▍         | 209/5176 [00:06<01:50, 45.11it/s]
+describe images:   4%|▍         | 225/5176 [00:07<02:16, 36.27it/s]
+describe images:   5%|▍         | 257/5176 [00:07<02:17, 35.73it/s]
+describe images:   5%|▌         | 273/5176 [00:10<04:23, 18.58it/s]
+describe images:   7%|▋         | 385/5176 [00:10<01:31, 52.59it/s]
+describe images:   8%|▊         | 405/5176 [00:13<03:05, 25.69it/s]
+describe images:  10%|▉         | 513/5176 [00:14<01:41, 45.93it/s]
+describe images:  10%|█         | 529/5176 [00:15<02:03, 37.66it/s]
+describe images:  11%|█         | 545/5176 [00:15<01:53, 40.75it/s]
+describe images:  11%|█         | 561/5176 [00:16<02:06, 36.37it/s]
+describe images:  11%|█▏        | 593/5176 [00:16<01:50, 41.38it/s]
+describe images:  12%|█▏        | 625/5176 [00:19<02:52, 26.39it/s]
+describe images:  14%|█▍        | 721/5176 [00:20<01:38, 45.44it/s]
+describe images:  14%|█▍        | 737/5176 [00:20<01:40, 44.23it/s]
+describe images:  15%|█▌        | 801/5176 [00:21<01:14, 58.84it/s]
+describe images:  16%|█▌        | 817/5176 [00:21<01:21, 53.66it/s]
+describe images:  16%|█▋        | 849/5176 [00:21<01:14, 58.10it/s]
+describe images:  17%|█▋        | 865/5176 [00:22<01:35, 45.17it/s]
+describe images:  17%|█▋        | 881/5176 [00:23<01:47, 39.84it/s]
+describe images:  17%|█▋        | 897/5176 [00:24<02:33, 27.81it/s]
+describe images:  18%|█▊        | 945/5176 [00:24<01:26, 48.76it/s]
+describe images:  19%|█▉        | 977/5176 [00:25<01:15, 55.48it/s]
+describe images:  19%|█▉        | 993/5176 [00:26<02:11, 31.86it/s]
+describe images:  20%|██        | 1057/5176 [00:27<01:26, 47.41it/s]
+describe images:  21%|██        | 1089/5176 [00:28<01:36, 42.24it/s]
+describe images:  22%|██▏       | 1121/5176 [00:30<02:10, 31.06it/s]
+describe images:  24%|██▎       | 1217/5176 [00:31<01:25, 46.05it/s]
+describe images:  24%|██▍       | 1233/5176 [00:33<02:13, 29.59it/s]
+describe images:  25%|██▍       | 1281/5176 [00:34<01:53, 34.30it/s]
+describe images:  26%|██▌       | 1329/5176 [00:37<02:51, 22.49it/s]
+describe images:  28%|██▊       | 1457/5176 [00:38<01:29, 41.54it/s]
+describe images:  29%|██▉       | 1521/5176 [00:40<01:22, 44.23it/s]
+describe images:  30%|██▉       | 1537/5176 [00:40<01:25, 42.76it/s]
+describe images:  30%|███       | 1553/5176 [00:41<01:28, 41.13it/s]
+describe images:  31%|███       | 1585/5176 [00:41<01:23, 43.07it/s]
+describe images:  31%|███       | 1601/5176 [00:42<01:19, 44.85it/s]
+describe images:  31%|███       | 1617/5176 [00:42<01:16, 46.76it/s]
+describe images:  32%|███▏      | 1649/5176 [00:42<00:58, 60.50it/s]
+describe images:  32%|███▏      | 1665/5176 [00:42<01:03, 55.10it/s]
+describe images:  32%|███▏      | 1681/5176 [00:45<02:37, 22.25it/s]
+describe images:  33%|███▎      | 1713/5176 [00:45<01:42, 33.84it/s]
+describe images:  34%|███▍      | 1761/5176 [00:46<01:27, 38.98it/s]
+describe images:  35%|███▌      | 1825/5176 [00:46<00:59, 55.86it/s]
+describe images:  36%|███▌      | 1841/5176 [00:48<01:24, 39.66it/s]
+describe images:  37%|███▋      | 1905/5176 [00:48<01:05, 50.11it/s]
+describe images:  37%|███▋      | 1921/5176 [00:49<01:20, 40.41it/s]
+describe images:  38%|███▊      | 1969/5176 [00:50<01:08, 46.54it/s]
+describe images:  39%|███▊      | 2001/5176 [00:52<01:49, 28.99it/s]
+describe images:  40%|███▉      | 2065/5176 [00:54<01:31, 33.88it/s]
+describe images:  41%|████      | 2113/5176 [00:56<01:38, 30.97it/s]
+describe images:  42%|████▏     | 2177/5176 [00:56<01:03, 46.89it/s]
+describe images:  43%|████▎     | 2209/5176 [00:58<01:39, 29.93it/s]
+describe images:  44%|████▍     | 2289/5176 [00:58<00:57, 50.46it/s]
+describe images:  45%|████▍     | 2313/5176 [00:59<00:55, 51.71it/s]
+describe images:  45%|████▌     | 2337/5176 [00:59<00:52, 53.81it/s]
+describe images:  46%|████▌     | 2369/5176 [01:01<01:26, 32.35it/s]
+describe images:  47%|████▋     | 2433/5176 [01:02<00:56, 48.14it/s]
+describe images:  48%|████▊     | 2465/5176 [01:02<00:50, 53.30it/s]
+describe images:  48%|████▊     | 2481/5176 [01:04<01:35, 28.14it/s]
+describe images:  49%|████▉     | 2529/5176 [01:05<01:04, 40.85it/s]
+describe images:  49%|████▉     | 2545/5176 [01:06<01:38, 26.77it/s]
+describe images:  50%|█████     | 2609/5176 [01:07<01:07, 38.27it/s]
+describe images:  51%|█████     | 2641/5176 [01:09<01:19, 32.02it/s]
+describe images:  52%|█████▏    | 2673/5176 [01:10<01:32, 27.02it/s]
+describe images:  52%|█████▏    | 2689/5176 [01:11<01:23, 29.88it/s]
+describe images:  53%|█████▎    | 2753/5176 [01:11<00:51, 47.14it/s]
+describe images:  54%|█████▍    | 2785/5176 [01:12<00:49, 47.87it/s]
+describe images:  54%|█████▍    | 2801/5176 [01:13<01:04, 37.10it/s]
+describe images:  54%|█████▍    | 2817/5176 [01:13<01:05, 35.94it/s]
+describe images:  55%|█████▍    | 2833/5176 [01:15<01:55, 20.32it/s]
+describe images:  55%|█████▌    | 2865/5176 [01:16<01:29, 25.73it/s]
+describe images:  57%|█████▋    | 2945/5176 [01:17<00:58, 37.99it/s]
+describe images:  57%|█████▋    | 2961/5176 [01:18<00:57, 38.47it/s]
+describe images:  58%|█████▊    | 2977/5176 [01:18<00:52, 41.94it/s]
+describe images:  58%|█████▊    | 2993/5176 [01:18<00:49, 43.80it/s]
+describe images:  58%|█████▊    | 3009/5176 [01:20<01:18, 27.63it/s]
+describe images:  58%|█████▊    | 3025/5176 [01:21<01:37, 22.12it/s]
+describe images:  59%|█████▉    | 3073/5176 [01:21<00:54, 38.92it/s]
+describe images:  60%|█████▉    | 3089/5176 [01:23<01:33, 22.25it/s]
+describe images:  61%|██████    | 3153/5176 [01:24<01:01, 32.98it/s]
+describe images:  62%|██████▏   | 3201/5176 [01:25<00:42, 46.72it/s]
+describe images:  62%|██████▏   | 3233/5176 [01:26<00:50, 38.52it/s]
+describe images:  63%|██████▎   | 3265/5176 [01:26<00:42, 44.52it/s]
+describe images:  64%|██████▎   | 3297/5176 [01:27<00:36, 51.52it/s]
+describe images:  64%|██████▍   | 3313/5176 [01:27<00:36, 51.19it/s]
+describe images:  65%|██████▍   | 3345/5176 [01:28<00:38, 47.67it/s]
+describe images:  65%|██████▍   | 3361/5176 [01:28<00:46, 39.02it/s]
+describe images:  65%|██████▌   | 3377/5176 [01:29<00:40, 43.99it/s]
+describe images:  66%|██████▌   | 3393/5176 [01:30<00:54, 32.95it/s]
+describe images:  66%|██████▌   | 3409/5176 [01:31<01:20, 21.82it/s]
+describe images:  67%|██████▋   | 3473/5176 [01:32<00:48, 35.23it/s]
+describe images:  67%|██████▋   | 3489/5176 [01:32<00:45, 37.06it/s]
+describe images:  68%|██████▊   | 3537/5176 [01:34<00:51, 31.91it/s]
+describe images:  69%|██████▉   | 3569/5176 [01:35<00:42, 37.43it/s]
+describe images:  70%|██████▉   | 3601/5176 [01:35<00:36, 43.70it/s]
+describe images:  70%|██████▉   | 3617/5176 [01:35<00:33, 46.63it/s]
+describe images:  70%|███████   | 3649/5176 [01:37<00:49, 30.78it/s]
+describe images:  71%|███████   | 3681/5176 [01:38<00:49, 30.00it/s]
+describe images:  72%|███████▏  | 3713/5176 [01:38<00:37, 39.04it/s]
+describe images:  73%|███████▎  | 3761/5176 [01:39<00:32, 43.13it/s]
+describe images:  73%|███████▎  | 3777/5176 [01:40<00:38, 36.29it/s]
+describe images:  73%|███████▎  | 3793/5176 [01:43<01:11, 19.32it/s]
+describe images:  75%|███████▍  | 3857/5176 [01:44<00:41, 31.91it/s]
+describe images:  75%|███████▍  | 3873/5176 [01:44<00:41, 31.39it/s]
+describe images:  75%|███████▌  | 3889/5176 [01:44<00:37, 33.97it/s]
+describe images:  75%|███████▌  | 3905/5176 [01:48<01:25, 14.88it/s]
+describe images:  77%|███████▋  | 4001/5176 [01:48<00:31, 36.96it/s]
+describe images:  78%|███████▊  | 4033/5176 [01:50<00:39, 29.04it/s]
+describe images:  79%|███████▉  | 4113/5176 [01:50<00:21, 49.75it/s]
+describe images:  80%|███████▉  | 4129/5176 [01:51<00:27, 37.86it/s]
+describe images:  80%|████████  | 4161/5176 [01:53<00:31, 32.37it/s]
+describe images:  81%|████████▏ | 4209/5176 [01:54<00:27, 35.59it/s]
+describe images:  82%|████████▏ | 4241/5176 [01:56<00:33, 28.26it/s]
+describe images:  83%|████████▎ | 4305/5176 [01:56<00:21, 40.68it/s]
+describe images:  83%|████████▎ | 4321/5176 [01:58<00:30, 27.68it/s]
+describe images:  84%|████████▍ | 4337/5176 [01:58<00:26, 31.38it/s]
+describe images:  84%|████████▍ | 4353/5176 [01:59<00:25, 32.52it/s]
+describe images:  85%|████████▌ | 4401/5176 [01:59<00:17, 44.18it/s]
+describe images:  85%|████████▌ | 4417/5176 [02:01<00:23, 31.82it/s]
+describe images:  87%|████████▋ | 4481/5176 [02:01<00:12, 54.63it/s]
+describe images:  87%|████████▋ | 4497/5176 [02:02<00:20, 33.06it/s]
+describe images:  88%|████████▊ | 4529/5176 [02:03<00:17, 37.78it/s]
+describe images:  88%|████████▊ | 4577/5176 [02:04<00:14, 41.65it/s]
+describe images:  89%|████████▉ | 4609/5176 [02:05<00:12, 44.20it/s]
+describe images:  89%|████████▉ | 4625/5176 [02:06<00:16, 33.01it/s]
+describe images:  90%|█████████ | 4673/5176 [02:07<00:15, 32.02it/s]
+describe images:  91%|█████████ | 4705/5176 [02:09<00:16, 29.16it/s]
+describe images:  92%|█████████▏| 4753/5176 [02:10<00:13, 31.38it/s]
+describe images:  92%|█████████▏| 4769/5176 [02:11<00:15, 26.85it/s]
+describe images:  93%|█████████▎| 4817/5176 [02:11<00:08, 40.56it/s]
+describe images:  93%|█████████▎| 4833/5176 [02:13<00:14, 24.13it/s]
+describe images:  94%|█████████▍| 4881/5176 [02:14<00:09, 29.60it/s]
+describe images:  95%|█████████▌| 4929/5176 [02:16<00:08, 29.66it/s]
+describe images:  97%|█████████▋| 5009/5176 [02:17<00:03, 43.75it/s]
+describe images:  97%|█████████▋| 5025/5176 [02:18<00:04, 37.11it/s]
+describe images:  98%|█████████▊| 5073/5176 [02:18<00:02, 50.52it/s]
+describe images:  98%|█████████▊| 5089/5176 [02:19<00:01, 48.69it/s]
+describe images:  99%|█████████▊| 5105/5176 [02:19<00:01, 53.22it/s]
+describe images:  99%|█████████▉| 5121/5176 [02:22<00:02, 19.90it/s]
+describe images:  99%|█████████▉| 5137/5176 [02:23<00:02, 17.21it/s]
+describe images: 100%|██████████| 5176/5176 [02:23<00:00, 36.05it/s]
+
+near-duplicate search:   0%|          | 0/5128 [00:00<?, ?it/s]
+near-duplicate search:   2%|▏         | 88/5128 [00:00<00:05, 871.75it/s]
+near-duplicate search:   3%|▎         | 176/5128 [00:00<00:05, 862.66it/s]
+near-duplicate search:   5%|▌         | 265/5128 [00:00<00:05, 872.31it/s]
+near-duplicate search:   7%|▋         | 359/5128 [00:00<00:05, 895.31it/s]
+near-duplicate search:   9%|▉         | 449/5128 [00:00<00:05, 848.73it/s]
+near-duplicate search:  11%|█         | 542/5128 [00:00<00:05, 875.05it/s]
+near-duplicate search:  13%|█▎        | 642/5128 [00:00<00:04, 912.95it/s]
+near-duplicate search:  15%|█▍        | 744/5128 [00:00<00:04, 944.97it/s]
+near-duplicate search:  17%|█▋        | 848/5128 [00:00<00:04, 972.01it/s]
+near-duplicate search:  19%|█▊        | 956/5128 [00:01<00:04, 1002.16it/s]
+near-duplicate search:  21%|██        | 1067/5128 [00:01<00:03, 1032.51it/s]
+near-duplicate search:  23%|██▎       | 1181/5128 [00:01<00:03, 1063.47it/s]
+near-duplicate search:  25%|██▌       | 1297/5128 [00:01<00:03, 1091.55it/s]
+near-duplicate search:  28%|██▊       | 1417/5128 [00:01<00:03, 1122.10it/s]
+near-duplicate search:  30%|███       | 1540/5128 [00:01<00:03, 1151.12it/s]
+near-duplicate search:  33%|███▎      | 1668/5128 [00:01<00:02, 1189.60it/s]
+near-duplicate search:  35%|███▌      | 1800/5128 [00:01<00:02, 1228.06it/s]
+near-duplicate search:  38%|███▊      | 1934/5128 [00:01<00:02, 1260.32it/s]
+near-duplicate search:  40%|████      | 2072/5128 [00:01<00:02, 1294.67it/s]
+near-duplicate search:  43%|████▎     | 2219/5128 [00:02<00:02, 1346.04it/s]
+near-duplicate search:  46%|████▋     | 2374/5128 [00:02<00:01, 1407.01it/s]
+near-duplicate search:  50%|████▉     | 2539/5128 [00:02<00:01, 1477.97it/s]
+near-duplicate search:  53%|█████▎    | 2711/5128 [00:02<00:01, 1548.47it/s]
+near-duplicate search:  57%|█████▋    | 2899/5128 [00:02<00:01, 1646.84it/s]
+near-duplicate search:  61%|██████    | 3105/5128 [00:02<00:01, 1770.14it/s]
+near-duplicate search:  65%|██████▌   | 3339/5128 [00:02<00:00, 1938.81it/s]
+near-duplicate search:  70%|███████   | 3615/5128 [00:02<00:00, 2184.34it/s]
+near-duplicate search:  77%|███████▋  | 3954/5128 [00:02<00:00, 2544.88it/s]
+near-duplicate search:  86%|████████▌ | 4418/5128 [00:02<00:00, 3171.71it/s]
+near-duplicate search: 100%|██████████| 5128/5128 [00:02<00:00, 1714.07it/s]
+[audit] 1144 near-duplicate pairs (<= 20/256 bits)
+[audit] 4078 groups, 930 with more than one image, largest 7
+[audit] 326 of 1027 original validation images have a near-duplicate in the original training set
+{
+  "counts": {
+    "authentic": 2377,
+    "forged": 2751,
+    "supplemental": 48
+  },
+  "hamming_threshold_bits": 20,
+  "groups": {
+    "total": 4078,
+    "multi_image": 930,
+    "largest": 7
+  },
+  "original_validation_with_near_duplicate_in_train": {
+    "leaked": 326,
+    "total": 1027
+  },
+  "grouped_split": {
+    "authentic": {
+      "test": 352,
+      "train": 1667,
+      "val": 358
+    },
+    "forged": {
+      "test": 418,
+      "train": 1918,
+      "val": 415
+    }
+  },
+  "forged_area_fraction_quantiles": {
+    "0.05": 0.0025707950303081994,
+    "0.25": 0.007522932942708333,
+    "0.5": 0.027075617283950616,
+    "0.75": 0.0808786606496061,
+    "0.95": 0.1853033033033033
+  },
+  "forged_instances_per_image": {
+    "1.0": 1869,
+    "2.0": 701,
+    "3.0": 174,
+    "4.0": 5,
+    "5.0": 2
+  },
+  "forged_touching_border": 0.5772446383133406,
+  "supplemental_area_fraction_quantiles": {
+    "0.05": 0.007366208092607669,
+    "0.25": 0.03380159579231797,
+    "0.5": 0.06692892805935358,
+    "0.75": 0.1442634939427389,
+    "0.95": 0.2522282943950154
+  },
+  "supplemental_instances_per_image": {
+    "1.0": 33,
+    "2.0": 9,
+    "3.0": 2,
+    "4.0": 2,
+    "8.0": 1,
+    "13.0": 1
+  },
+  "image_height_quantiles": {
+    "train": {
+      "0.05": 105.0,
+      "0.5": 512.0,
+      "0.95": 1912.0
+    },
+    "supplemental": {
+      "0.05": 530.05,
+      "0.5": 1251.0,
+      "0.95": 4068.4999999999995
+    }
+  },
+  "appearance_counts": {
+    "colour": 2176,
+    "grayscale-dark": 1637,
+    "grayscale-light": 1315
+  },
+  "forged_size_bins_by_split": {
+    "0.5-2%": {
+      "test": 133,
+      "train": 554,
+      "val": 108
+    },
+    "<0.5%": {
+      "test": 74,
+      "train": 298,
+      "val": 65
+    },
+    ">2%": {
+      "test": 211,
+      "train": 1066,
+      "val": 242
+    }
+  },
+  "mask_shape_examples": [
+    "1x512x648",
+    "1x1200x1600",
+    "1x256x320",
+    "1x666x1000",
+    "2x712x414"
+  ]
+}
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text

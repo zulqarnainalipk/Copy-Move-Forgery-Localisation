@@ -1,0 +1,123 @@
+[
+  {
+    "variant": "full_pipeline",
+    "area_min": 0,
+    "prob_min": 0.1,
+    "mixed_pixel_f1": 0.5971237197471941,
+    "forged_pixel_f1": 0.3559456081467452,
+    "forged_pixel_mcc": 0.36200942187717655,
+    "authentic_tnr": 0.8835227272727273,
+    "image_auroc": 0.8411741518051326,
+    "official_score": 0.44848911934858715
+  },
+  {
+    "variant": "no_gradient_blend",
+    "area_min": 0,
+    "prob_min": 0.1,
+    "mixed_pixel_f1": 0.6025061454442666,
+    "forged_pixel_f1": 0.3802146698375246,
+    "forged_pixel_mcc": 0.385323430558407,
+    "authentic_tnr": 0.8664772727272727,
+    "image_auroc": 0.8415547520661157,
+    "official_score": 0.4536404974972541
+  },
+  {
+    "variant": "no_smoothing",
+    "area_min": 0,
+    "prob_min": 0.1,
+    "mixed_pixel_f1": 0.5959152856051069,
+    "forged_pixel_f1": 0.35611188975103414,
+    "forged_pixel_mcc": 0.36213479363706785,
+    "authentic_tnr": 0.8806818181818182,
+    "image_auroc": 0.8412217268377555,
+    "official_score": 0.44682646435862244
+  },
+  {
+    "variant": "no_morphology",
+    "area_min": 0,
+    "prob_min": 0.1,
+    "mixed_pixel_f1": 0.5975862527606086,
+    "forged_pixel_f1": 0.35679764264514024,
+    "forged_pixel_mcc": 0.36283315957368695,
+    "authentic_tnr": 0.8835227272727273,
+    "image_auroc": 0.8415071770334929,
+    "official_score": 0.4470758586522511
+  },
+  {
+    "variant": "plain_threshold",
+    "area_min": 0,
+    "prob_min": 0.1,
+    "mixed_pixel_f1": 0.602661776758541,
+    "forged_pixel_f1": 0.38050135910066163,
+    "forged_pixel_mcc": 0.3855592555704474,
+    "authentic_tnr": 0.8664772727272727,
+    "image_auroc": 0.8415479556328839,
+    "official_score": 0.45079538885848264
+  },
+  {
+    "variant": "k_sigma_0.0",
+    "area_min": 0,
+    "prob_min": 0.15,
+    "mixed_pixel_f1": 0.5812532295618057,
+    "forged_pixel_f1": 0.2692942267047617,
+    "forged_pixel_mcc": 0.2679518995895532,
+    "authentic_tnr": 0.9517045454545454,
+    "image_auroc": 0.8288590147890387,
+    "official_score": 0.4673997662160731
+  },
+  {
+    "variant": "k_sigma_0.6",
+    "area_min": 0,
+    "prob_min": 0.15,
+    "mixed_pixel_f1": 0.6160797327333993,
+    "forged_pixel_f1": 0.3669411344610465,
+    "forged_pixel_mcc": 0.36821755226457775,
+    "authentic_tnr": 0.9119318181818182,
+    "image_auroc": 0.8458636907351023,
+    "official_score": 0.4743982610444508
+  },
+  {
+    "variant": "k_sigma_1.0",
+    "area_min": 0,
+    "prob_min": 0.15,
+    "mixed_pixel_f1": 0.621267018374957,
+    "forged_pixel_f1": 0.39802776112133215,
+    "forged_pixel_mcc": 0.39908531160582456,
+    "authentic_tnr": 0.8863636363636364,
+    "image_auroc": 0.8486978033927794,
+    "official_score": 0.4740857505807853
+  },
+  {
+    "variant": "alpha_0.25",
+    "area_min": 0,
+    "prob_min": 0.2,
+    "mixed_pixel_f1": 0.60754127286652,
+    "forged_pixel_f1": 0.32011191413210627,
+    "forged_pixel_mcc": 0.31851272772536887,
+    "authentic_tnr": 0.9488636363636364,
+    "image_auroc": 0.8418945737277078,
+    "official_score": 0.4818907013042128
+  },
+  {
+    "variant": "alpha_0.65",
+    "area_min": 0,
+    "prob_min": 0.1,
+    "mixed_pixel_f1": 0.5919674297528036,
+    "forged_pixel_f1": 0.34644717920970985,
+    "forged_pixel_mcc": 0.3530155097314422,
+    "authentic_tnr": 0.8835227272727273,
+    "image_auroc": 0.8407255872118312,
+    "official_score": 0.4429668790189346
+  },
+  {
+    "variant": "no_gates",
+    "area_min": 0,
+    "prob_min": 0.0,
+    "mixed_pixel_f1": 0.22556381445263948,
+    "forged_pixel_f1": 0.415512289781178,
+    "forged_pixel_mcc": 0.4417637852568657,
+    "authentic_tnr": 0.0,
+    "image_auroc": 0.8411741518051326,
+    "official_score": 0.049718715216604745
+  }
+]

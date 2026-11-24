@@ -1,0 +1,47 @@
+[setup] repo $REPO
+[setup] data $FORGERY_DATA_DIR
+[setup] encoder $FORGERY_DINOV2_DIR
+[setup] splits outputs/splits.csv
+[run] $REPO/scripts/train.py --run-name g2b_dice --splits outputs/splits.csv --workers 4 --loss bce_dice
+[data] device cuda | train 3585 | val 773 | augment none | encoder input crop224 | head conv3 | loss bce_dice
+  scaler = torch.cuda.amp.GradScaler() if amp and device.type == "cuda" else None
+[model] parameters 90.06M | decoder 3.48M
+[stage 1] decoder warmup
+[S1] epoch 01/16 train 1.1384 val 1.0586 lr 1.00e-05 saved (142s)
+[S1] epoch 02/16 train 1.0417 val 1.0293 lr 9.91e-06 saved (127s)
+[S1] epoch 03/16 train 1.0146 val 1.0150 lr 9.66e-06 saved (126s)
+[S1] epoch 04/16 train 0.9969 val 1.0036 lr 9.24e-06 saved (128s)
+[S1] epoch 05/16 train 0.9823 val 0.9941 lr 8.68e-06 saved (126s)
+[S1] epoch 06/16 train 0.9701 val 0.9885 lr 8.00e-06 saved (128s)
+[S1] epoch 07/16 train 0.9597 val 0.9857 lr 7.22e-06 saved (128s)
+[S1] epoch 08/16 train 0.9497 val 0.9795 lr 6.38e-06 saved (127s)
+[S1] epoch 09/16 train 0.9420 val 0.9798 lr 5.50e-06 patience 1/3 (129s)
+[S1] epoch 10/16 train 0.9351 val 0.9799 lr 4.62e-06 patience 2/3 (128s)
+[S1] epoch 11/16 train 0.9279 val 0.9742 lr 3.78e-06 saved (128s)
+[S1] epoch 12/16 train 0.9225 val 0.9751 lr 3.00e-06 patience 1/3 (126s)
+[S1] epoch 13/16 train 0.9185 val 0.9724 lr 2.32e-06 saved (126s)
+[S1] epoch 14/16 train 0.9168 val 0.9741 lr 1.76e-06 patience 1/3 (127s)
+[S1] epoch 15/16 train 0.9137 val 0.9727 lr 1.34e-06 patience 2/3 (128s)
+[S1] epoch 16/16 train 0.9107 val 0.9747 lr 1.09e-06 patience 3/3 (126s)
+[S1] early stop
+[stage 2] joint fine-tuning
+[model] trainable parameters 90.06M
+[S2] epoch 01/16 train 0.9228 val 0.9673 lr 1.00e-05 saved (157s)
+[S2] epoch 02/16 train 0.9001 val 0.9570 lr 9.91e-06 saved (157s)
+[S2] epoch 03/16 train 0.8773 val 0.9537 lr 9.64e-06 saved (157s)
+[S2] epoch 04/16 train 0.8611 val 0.9428 lr 9.20e-06 saved (157s)
+[S2] epoch 05/16 train 0.8427 val 0.9423 lr 8.61e-06 saved (159s)
+[S2] epoch 06/16 train 0.8272 val 0.9368 lr 7.89e-06 saved (157s)
+[S2] epoch 07/16 train 0.8117 val 0.9409 lr 7.07e-06 patience 1/5 (160s)
+[S2] epoch 08/16 train 0.8014 val 0.9415 lr 6.18e-06 patience 2/5 (158s)
+[S2] epoch 09/16 train 0.7898 val 0.9442 lr 5.25e-06 patience 3/5 (158s)
+[S2] epoch 10/16 train 0.7793 val 0.9488 lr 4.32e-06 patience 4/5 (157s)
+[S2] epoch 11/16 train 0.7713 val 0.9531 lr 3.43e-06 patience 5/5 (158s)
+[S2] early stop
+[done] best validation loss 0.9368 | checkpoint outputs/g2b_dice/checkpoint.pt
+[run] $REPO/scripts/predict.py --run-name g2b_dice --splits outputs/splits.csv
+[predict] 773 maps written to outputs/g2b_dice/probs_val.npz
+[predict] 770 maps written to outputs/g2b_dice/probs_test.npz
+[predict] 48 maps written to outputs/g2b_dice/probs_supp.npz
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text

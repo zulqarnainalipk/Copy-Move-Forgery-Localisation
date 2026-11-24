@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+outputs/
+weights/
+data/
+.pytest_cache/
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.coverage
+htmlcov/
+build/
+dist/
+
+# Large artefacts: model checkpoints and cached probability maps (regenerate with scripts/train.py and scripts/predict.py)
+*.pt
+*.pth
+*.ckpt
+*.npz
+results/g1_base/g1_base/

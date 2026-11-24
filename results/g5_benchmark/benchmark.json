@@ -1,0 +1,39 @@
+{
+  "device": "Tesla T4",
+  "images": 60,
+  "parameters": 90064897,
+  "segmenter_crop224_none": {
+    "median_s": 0.029085445500001583,
+    "p90_s": 0.03039151520001724,
+    "peak_memory_mb": 415.2080078125
+  },
+  "segmenter_crop224_flip3": {
+    "median_s": 0.08418993349999937,
+    "p90_s": 0.0854312618000023,
+    "peak_memory_mb": 423.0615234375
+  },
+  "segmenter_crop224_rot4": {
+    "median_s": 0.11279819899999666,
+    "p90_s": 0.11405127670000467,
+    "peak_memory_mb": 425.0615234375
+  },
+  "segmenter_full_none": {
+    "median_s": 0.10307640300001708,
+    "p90_s": 0.10411948369998356,
+    "peak_memory_mb": 416.830078125
+  },
+  "segmenter_full_flip3": {
+    "median_s": 0.3123945160000119,
+    "p90_s": 0.3161342341999955,
+    "peak_memory_mb": 423.53955078125
+  },
+  "segmenter_full_rot4": {
+    "median_s": 0.42687482549999345,
+    "p90_s": 0.43213569200001417,
+    "peak_memory_mb": 425.53955078125
+  },
+  "sift": {
+    "median_s": 0.747244221499983,
+    "p90_s": 1.2875352399000064
+  }
+}
