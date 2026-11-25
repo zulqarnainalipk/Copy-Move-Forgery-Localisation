@@ -12,8 +12,8 @@ Each folder holds the stored output of one run: usually `report.json` (metrics w
 | `c4_evalks` | Segmenter evaluation with k_sigma chosen on validation from 0.3, 0.6, 1.0, 1.5 and 2.0, together with the gates; this is the reported configuration |
 | `c4_ms` | Multi-scale tiled inference (not adopted) |
 | `c5_ablate` | Post-processing ablations and stratified analysis on cached probability maps |
-| `c6_hybrid` | Fusion of the SIFT matcher with a segmenter, seven rules |
-| `c7_robust` | Robustness of the SIFT baseline to JPEG, blur, noise and rescaling |
+| `c6_hybrid` | Combination of the SIFT matcher with a segmenter, seven rules |
+| `c7_robust` | Effect of JPEG, blur, noise and rescaling on the SIFT baseline |
 | `c8` | Qualitative case panels and near-duplicate pairs |
 | `c9` | Checks: grouping sensitivity, residual near-duplicates, multi-panel contact sheets |
 | `c10` to `c13` | Re-selection under other objectives (competition score, forged F1 under an authentic TNR floor) for segmenters, SIFT, SuperPoint and the hybrid |
@@ -33,7 +33,7 @@ Each folder holds the stored output of one run: usually `report.json` (metrics w
 | `c4_eval_g1` | Crop-224 baseline segmenter | Table 1, Fig. 2, Table 2 | `evaluate.py` (`g1_base`) |
 | `c4_eval_g2a_full_input` | Full 518 px input | Fig. 2 | `evaluate.py` (`g2a_full`) |
 | `c4_eval_g2b_dice`, `c4_eval_g2c_focal`, `c4_eval_g2d_aug`, `c4_eval_g2e_linear` | Loss, augmentation and head variants | Fig. 2 | `evaluate.py` |
-| `c4_eval_g3_full_aug` | Final recipe, fixed k_sigma | Figs 2 and 5 | `evaluate.py` (`g3_full_aug`) |
+| `c4_eval_g3_full_aug` | Main configuration, fixed k_sigma | Figs 2 and 5 | `evaluate.py` (`g3_full_aug`) |
 | `c4_eval_g6_large`, `c4_eval_g7_panel` | DINOv2-large and panel-collage variants | Figs 2 and 5 | `evaluate.py` |
 | `c4_eval_g4_tta` | Flip and rotation averaging (two sub-folders) | Experiment log only | `evaluate.py` (`g4_tta_none`, `g4_tta_rot4`) |
 | `c4_evalks_g3_full_aug` | Main segmenter (validation-chosen k_sigma) | Table 1, Figs 2 and 4, Table 2, calibration | `evaluate.py` (`g3_full_aug_ks`) |
@@ -53,9 +53,9 @@ Each folder holds the stored output of one run: usually `report.json` (metrics w
 | `g1_base`, `g2a_full_input`, `g2b_dice`, `g2c_focal`, `g2d_aug`, `g6_large`, `g7_panel` | Training histories and logs | Methods (training) | `train.py`, `predict.py` |
 | `g5_benchmark` | Runtime and peak memory | Results text and Methods | `benchmark.py` (`g5_benchmark`) |
 | `t0_tests`, `t1_tests` | Test-suite logs (11 and 19 passed) | None | `pytest` |
-| `tables` | Main, confusion, ablation, stratified, robustness, runtime and training tables; paired differences; instance decomposition; multi-panel outcomes; residual leakage effect | Table 2 (`confusion_test`), Supplementary Tables | `make_tables.py`, `paired.py` |
+| `tables` | Main, confusion, ablation, stratified, image-quality, runtime and training tables; paired differences; instance decomposition; multi-panel outcomes; residual leakage effect | Table 2 (`confusion_test`), Supplementary Tables | `make_tables.py`, `paired.py` |
 
-Figure and table numbers follow `paper/main.tex`: Fig. 1 study design, Table 1 main results, Fig. 2 design choices, Table 2 confusion counts, Fig. 3 cases, Fig. 4 image quality and errors, Fig. 5 distribution shift.
+Figure and table numbers follow the paper, whose sections run Introduction, Related work, Methods, Results, Discussion and Conclusion. Main text, in order of first citation: Fig. 1 study design, Table 1 main results, Fig. 2 design choices, Fig. 3 qualitative cases, Table 2 confusion counts, Fig. 4 image quality and errors, Fig. 5 distribution shift. Supplementary Information: Tables S1 (four selection objectives, `c10` to `c13`), S2 and S3 (grouping sensitivity and residual near-duplicates, `c9_checks`), S4 (instance decomposition, `tables`), S5 (calibration, `calibration`), S6 (multi-panel outcomes, `tables`) and S7 (residual neighbour effect, `tables`); Fig. S1 (near-duplicate pairs) and Figs S2 to S49 (one sheet per multi-panel figure, `c9_checks/supp_sheets`).
 
 ## Large files
 
@@ -63,4 +63,4 @@ Model checkpoints (`*.pt`) and cached probability maps (`*.npz`, about 0.4 GB pe
 
 ## Trained weights
 
-The final trained weights are not included in this repository. To obtain them, retrain the final recipe with `scripts/train.py --run-name g3_full_aug --encoder-input full --augment strong` and the pretrained DINOv2-base encoder, as described in `docs/reproduce.md`. Seed-to-seed variation of test forged F1 is a few hundredths (0.462, 0.427 and 0.442 for seeds 42, 1 and 2).
+The final trained weights are not included in this repository. To obtain them, retrain the main configuration with `scripts/train.py --run-name g3_full_aug --encoder-input full --augment strong` and the pretrained DINOv2-base encoder, as described in `docs/reproduce.md`. Seed-to-seed variation of test forged F1 is a few hundredths (0.462, 0.427 and 0.442 for seeds 42, 1 and 2).

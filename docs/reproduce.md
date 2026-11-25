@@ -21,7 +21,7 @@ python scripts/evaluate.py --run-name baseline_dense
 
 ## 3. Segmenters
 
-Final recipe (DINOv2-base, full 518 px input, strong augmentation, BCE, seed 42):
+Main configuration (DINOv2-base, full 518 px input, strong augmentation, BCE, seed 42):
 
 ```sh
 python scripts/train.py --run-name g3_full_aug --encoder-input full --augment strong --workers 4
@@ -32,7 +32,7 @@ python scripts/evaluate.py --run-name g3_full_aug_ks --cache-dir outputs/g3_full
 
 The first evaluation uses the fixed default k_sigma (0.3); the second chooses k_sigma on validation and gives the headline numbers.
 
-Variants reported in the study differ from this recipe in one setting each:
+Variants reported in the study differ from this configuration in one setting each:
 
 | Run | Change |
 | --- | --- |

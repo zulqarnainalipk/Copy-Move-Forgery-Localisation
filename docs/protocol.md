@@ -9,7 +9,7 @@
 
 ## Selection rules
 
-- Image-level gates (minimum candidate area, minimum mean probability) and the threshold multiplier `k_sigma` are chosen on validation by mixed pixel F1. Hybrid fusion rules choose their inlier and probability thresholds the same way.
+- Image-level gates (minimum candidate area, minimum mean probability) and the threshold multiplier `k_sigma` are chosen on validation by mixed pixel F1. Hybrid combination rules choose their inlier and probability thresholds the same way.
 - Test and supplemental images are scored once per configuration after selection.
 - Ablation rows re-select gates on validation for each variant.
 
@@ -26,4 +26,4 @@
 - SIFT and SuperPoint self-matching with generalised nearest-neighbour matching, affine RANSAC and convex-hull masks.
 - Zero-shot self-similarity of frozen DINOv2 patch features.
 - DINOv2 segmenters differing in encoder input, augmentation, loss, head, backbone size and seed.
-- Seven fusion rules between segmenter and keypoint matcher.
+- Seven combination rules between segmenter and keypoint matcher.

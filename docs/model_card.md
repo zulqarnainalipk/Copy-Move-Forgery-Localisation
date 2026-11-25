@@ -14,7 +14,7 @@ Recod.ai/LUC Scientific Image Forgery Detection training images (authentic and f
 
 ## Evaluation
 
-Test split of 770 images (418 forged, 352 authentic). Final segmenter: forged F1 0.462 (95% CI 0.428 to 0.498), authentic true-negative rate 0.906, image AUROC 0.876, official score 0.517. A second training seed gave forged F1 0.427, so quote a spread of about 0.03 to 0.04 for the recipe. On the supplemental figures the segmenter alone scores forged F1 0.086; the hybrid `union` rule reaches 0.283 forged F1 and 0.243 official score. Robustness to JPEG, blur, noise and rescaling is in `results/tables/robustness.csv`.
+Test split of 770 images (418 forged, 352 authentic). Main segmenter: forged F1 0.462 (95% CI 0.428 to 0.498), authentic true-negative rate 0.906, image AUROC 0.876, official score 0.517. A second training seed gave forged F1 0.427, so quote a spread of about 0.03 to 0.04 for the recipe. On the supplemental figures the segmenter alone scores forged F1 0.086; the hybrid `union` rule reaches 0.283 forged F1 and 0.243 official score. Robustness to JPEG, blur, noise and rescaling is in `results/tables/robustness.csv`.
 
 ## Limitations
 
